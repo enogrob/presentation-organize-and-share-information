@@ -35,12 +35,11 @@ Apps (1-Chrome, 2-Files/Nemo, 3-VSCode, 4-PyCharm/Rubymine, 5-Terminal/Tilix, 6-
 [ ] d-Display
 [ ] s-Workspace Switcher
 
-
 Organise Information
 [ ] Access::Bookmarks/Extensions
 [ ] Projects/Tasks::Folders/Files - Repos - Github/Gitlab/Bitbucket
 [ ] Today Projects/Tasks::Symlinks 
-[ ] Idea/Knowledge/Concepts - Mindmaps/Conceptmaps/Boards - TheBrain/CmapsTools/Miro
+[ ] Ideas/Knowledge/Concepts - Mindmaps/Conceptmaps/Boards - TheBrain/CmapsTools/Miro
 
 Share Information
 [ ] How to/Procedures - Documents - Markdown - Gists

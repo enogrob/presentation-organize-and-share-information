@@ -16,6 +16,7 @@ In order to achieve that an infrasctruture instance and suggestions are given.
 
 ## Topics
 ```
+Infrastructure
 Linux
 [ ] Linux Desktop::Unit 
 [ ] Launcher Bar
@@ -35,12 +36,13 @@ Apps (1-Chrome, 2-Files/Nemo, 3-VSCode, 4-PyCharm/Rubymine, 5-Terminal/Tilix, 6-
 [ ] s-Workspace Switcher
 
 
-Information
-[ ] Project::Folder/Repos - Github/Gitlab/Bitbucket
-[ ] Documents::Files - Type - Text/Markdown
-[ ] Apps::Mind and Concept maps - TheBrain
+Organise Information
+[ ] Access::Bookmarks/Extensions
+[ ] Projects/Tasks::Folders/Files - Repos - Github/Gitlab/Bitbucket
+[ ] Today Projects/Tasks::Symlinks 
+[ ] Idea/Knowledge/Concepts - Mindmaps/Conceptmaps/Boards - TheBrain/CmapsTools/Miro
 
-Share
-[ ] How to/Procedures - Gists
-[ ] Documents - Type - Markdown/Confluence/Maps
+Share Information
+[ ] How to/Procedures - Documents - Markdown - Gists
+[ ] Checklist/Cheatsheets - Confluence
 ```

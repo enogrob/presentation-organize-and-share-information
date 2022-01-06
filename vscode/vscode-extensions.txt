@@ -1,5 +1,6 @@
 acherkashin.virtualbox-extension
 adrianwilczynski.open-folder-in-explorer
+algon-320.integrated-terminal-filedir
 bbenoist.vagrant
 bung87.rails
 bung87.vscode-gemfile

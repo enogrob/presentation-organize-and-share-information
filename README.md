@@ -26,6 +26,16 @@ The presentation covers fundamental concepts from David Allen's "Getting Things 
 
 The project serves as both an educational resource and a practical guide, targeting software developers, project managers, and technical teams who want to establish effective information management systems. It emphasizes the integration of various tools including VS Code extensions, documentation platforms like Confluence, note-taking applications, and version control systems to create a cohesive information ecosystem.
 
+<br/>
+
+<div align="center">
+  <a href="docs/Organize and Share Information_ba6077cf34f94339b4c5e03946cf9ee3-010422-1640-94.pdf" target="_blank">
+    <img src="images/order-of-things.png" alt="Presentation Organize and Share Information">
+  </a>
+</div>
+
+<br/>
+
 ### Architecture
 
 ```mermaid

@@ -1,3 +1,4 @@
 src/
-.github/
+.github/*
+!.github/copilot-instructions.md
 Icon*

@@ -40,87 +40,95 @@ The project serves as both an educational resource and a practical guide, target
 
 ```mermaid
 graph TB
-    subgraph "Information Sources"
-        A[Code Projects]
-        B[Documentation]
-        C[Learning Materials]
-        D[Meeting Notes]
-        E[Task Lists]
-    end
-    
-    subgraph "Collection & Capture"
-        F[VS Code]
-        G[GitHub Gists]
-        H[Note-taking Apps]
-        I[Screen Capture Tools]
-        J[Email Systems]
-    end
-    
-    subgraph "Organization Layer"
-        K[GTD Methodology]
-        L[File Management]
-        M[Tagging System]
-        N[Search & Index]
-        O[Version Control]
-    end
-    
-    subgraph "Processing & Analysis"
-        P[Mind Mapping]
-        Q[Documentation Tools]
-        R[Knowledge Base]
-        S[Decision Making]
-        T[Action Planning]
-    end
-    
-    subgraph "Sharing & Collaboration"
-        U[Confluence]
-        V[Presentations]
-        W[Team Repositories]
-        X[Training Sessions]
-        Y[Documentation Sites]
-    end
-    
-    subgraph "Tools Ecosystem"
-        Z1[TheBrain]
-        Z2[VS Code Extensions]
-        Z3[CmapTools]
-        Z4[Zeal Documentation]
-        Z5[Development IDEs]
-    end
-    
-    A --> F
-    B --> G
-    C --> H
-    D --> I
-    E --> J
-    
-    F --> K
-    G --> L
-    H --> M
-    I --> N
-    J --> O
-    
-    K --> P
-    L --> Q
-    M --> R
-    N --> S
-    O --> T
-    
-    P --> U
-    Q --> V
-    R --> W
-    S --> X
-    T --> Y
-    
-    Z1 --> R
-    Z2 --> F
-    Z3 --> P
-    Z4 --> Q
-    Z5 --> A
-    
-    U --> Y
-    V --> X
-    W --> Y
+  subgraph "📚 Information Sources"
+    A[🧑‍💻 Code Projects]
+    B[📄 Documentation]
+    C[🎓 Learning Materials]
+    D[📝 Meeting Notes]
+    E[✅ Task Lists]
+  end
+
+  subgraph "📥 Collection & Capture"
+    F[🧰 VS Code]
+    G[🔗 GitHub Gists]
+    H[📓 Note-taking Apps]
+    I[📷 Screen Capture Tools]
+    J[✉️ Email Systems]
+  end
+
+  subgraph "🗂️ Organization Layer"
+    K[📋 GTD Methodology]
+    L[🗃️ File Management]
+    M[🏷️ Tagging System]
+    N[🔎 Search & Index]
+    O[🔀 Version Control]
+  end
+
+  subgraph "🧠 Processing & Analysis"
+    P[🗺️ Mind Mapping]
+    Q[📝 Documentation Tools]
+    R[(📚 Knowledge Base)]
+    S[⚖️ Decision Making]
+    T[🧭 Action Planning]
+  end
+
+  subgraph "🤝 Sharing & Collaboration"
+    U[🌐 Confluence]
+    V[📊 Presentations]
+    W[(👥 Team Repositories)]
+    X[🎤 Training Sessions]
+    Y[🖥️ Documentation Sites]
+  end
+
+  subgraph "🧰 Tools Ecosystem"
+    Z1[🧠 TheBrain]
+    Z2[🧩 VS Code Extensions]
+    Z3[🗺️ CmapTools]
+    Z4[📖 Zeal Documentation]
+    Z5[💻 Development IDEs]
+  end
+
+  A -->|captured with| F
+  B -->|captured with| G
+  C -->|captured with| H
+  D -->|captured with| I
+  E -->|captured with| J
+
+  F -->|organized by| K
+  G -->|organized by| L
+  H -->|organized by| M
+  I -->|organized by| N
+  J -->|organized by| O
+
+  K -->|processed through| P
+  L -->|processed through| Q
+  M -->|processed through| R
+  N -->|processed through| S
+  O -->|processed through| T
+
+  P -->|shared via| U
+  Q -->|shared via| V
+  R -->|shared via| W
+  S -->|shared via| X
+  T -->|shared via| Y
+
+  Z1 -->|supports| R
+  Z2 -->|extends| F
+  Z3 -->|supports| P
+  Z4 -->|supports| Q
+  Z5 -->|creates| A
+
+  U -->|publishes to| Y
+  V -->|enables| X
+  W -->|publishes to| Y
+
+  classDef process fill:#DCEBFA,stroke:#355C7D,color:#1E293B
+  classDef data fill:#DDF2E1,stroke:#3F6B4F,color:#1E3324
+  classDef integration fill:#FBE4F0,stroke:#8E496D,color:#3F2434
+  class A,B,C,D,E,L,M,N,O,R,W data
+  class F,G,H,I,J,U,V,X,Y,Z1,Z2,Z3,Z4,Z5 integration
+  class K,P,Q,S,T process
+  linkStyle default stroke:#52606D,stroke-width:1.5px
 ```
 
 #### Alternative Perspectives
@@ -129,29 +137,39 @@ graph TB
 <summary><strong>1. GTD Workflow - Process Flow Diagram</strong> (Click to expand)</summary>
 
 ```mermaid
-graph TD
-    A[Information Input] --> B{Is it Actionable?}
-    B -->|No| C[Reference Material]
-    B -->|Yes| D{Will it take < 2 minutes?}
-    D -->|Yes| E[Do it Now]
-    D -->|No| F{Is it a Single Action?}
-    F -->|Yes| G[Next Actions List]
-    F -->|No| H[Projects List]
-    
-    C --> I[Filing System]
-    E --> J[Done]
-    G --> K[Context-based Lists]
-    H --> L[Project Planning]
-    
-    I --> M[Searchable Archive]
-    K --> N[Daily Reviews]
-    L --> O[Action Breakdown]
-    
-    N --> P[Weekly Review]
-    O --> G
-    P --> Q[System Maintenance]
-    
-    Q --> R[Continuous Improvement]
+flowchart TD
+  A([📥 Information Input]) --> B{🔎 Actionable?}
+  B -->|No| C[📚 Reference Material]
+  B -->|Yes| D{⏱️ Under 2 minutes?}
+  D -->|Yes| E[⚡ Do it Now]
+  D -->|No| F{🧩 Single Action?}
+  F -->|Yes| G[✅ Next Actions List]
+  F -->|No| H[📁 Projects List]
+
+  C --> I[(🗃️ Filing System)]
+  E --> J([🏁 Done])
+  G --> K[🏷️ Context-based Lists]
+  H --> L[🧭 Project Planning]
+
+  I --> M[(🔎 Searchable Archive)]
+  K --> N[🔄 Daily Reviews]
+  L --> O[🪜 Action Breakdown]
+
+  N --> P[📅 Weekly Review]
+  O --> G
+  P --> Q[🛠️ System Maintenance]
+
+  Q --> R[📈 Continuous Improvement]
+
+  classDef process fill:#DCEBFA,stroke:#355C7D,color:#1E293B
+  classDef data fill:#DDF2E1,stroke:#3F6B4F,color:#1E3324
+  classDef decision fill:#FFF1C9,stroke:#80641D,color:#3D3217
+  classDef outcome fill:#FBE4F0,stroke:#8E496D,color:#3F2434
+  class A,E,G,H,K,L,N,O,P,Q,R process
+  class C,I,M data
+  class B,D,F decision
+  class J outcome
+  linkStyle default stroke:#52606D,stroke-width:1.5px
 ```
 
 </details>
@@ -161,57 +179,65 @@ graph TD
 
 ```mermaid
 graph LR
-    subgraph "Development Environment"
-        A[VS Code]
-        B[GitHub]
-        C[Terminal/Tilix]
-        D[Development IDEs]
-    end
-    
-    subgraph "Documentation Layer"
-        E[Confluence]
-        F[Markdown Files]
-        G[GitHub Gists]
-        H[Zeal Documentation]
-    end
-    
-    subgraph "Knowledge Management"
-        I[TheBrain]
-        J[Mind Maps]
-        K[CmapTools]
-        L[File Organization]
-    end
-    
-    subgraph "Communication & Sharing"
-        M[Presentations]
-        N[Email Templates]
-        O[Training Materials]
-        P[Video Conferences]
-    end
-    
-    A --> F
-    B --> G
-    C --> A
-    D --> A
-    
-    E --> M
-    F --> E
-    G --> F
-    H --> E
-    
-    I --> J
-    J --> K
-    K --> L
-    L --> I
-    
-    M --> N
-    N --> O
-    O --> P
-    P --> M
-    
-    A -.-> I
-    E -.-> J
-    I -.-> M
+  subgraph "💻 Development Environment"
+    A[🧰 VS Code]
+    B[🐙 GitHub]
+    C[⌨️ Terminal/Tilix]
+    D[🖥️ Development IDEs]
+  end
+
+  subgraph "📝 Documentation Layer"
+    E[🌐 Confluence]
+    F[(📄 Markdown Files)]
+    G[🔗 GitHub Gists]
+    H[📖 Zeal Documentation]
+  end
+
+  subgraph "🧠 Knowledge Management"
+    I[🧠 TheBrain]
+    J[🗺️ Mind Maps]
+    K[🧩 CmapTools]
+    L[🗂️ File Organization]
+  end
+
+  subgraph "🤝 Communication & Sharing"
+    M[📊 Presentations]
+    N[✉️ Email Templates]
+    O[🎓 Training Materials]
+    P[🎥 Video Conferences]
+  end
+
+  A -->|documents in| F
+  B -->|shares snippets with| G
+  C -->|runs commands in| A
+  D -->|supports work in| A
+
+  E -->|publishes| M
+  F -->|informs| E
+  G -->|feeds| F
+  H -->|supports| E
+
+  I -->|organizes| J
+  J -->|maps concepts in| K
+  K -->|informs| L
+  L -->|feeds back to| I
+
+  M -->|guides| N
+  N -->|supports| O
+  O -->|delivered through| P
+  P -->|informs| M
+
+  A -.->|connects to| I
+  E -.->|connects to| J
+  I -.->|supports| M
+
+  classDef process fill:#DCEBFA,stroke:#355C7D,color:#1E293B
+  classDef data fill:#DDF2E1,stroke:#3F6B4F,color:#1E3324
+  classDef integration fill:#FBE4F0,stroke:#8E496D,color:#3F2434
+  class A,C,D,F,J,L,M,N,O,P process
+  class G data
+  class B,E,H,I,K integration
+  linkStyle default stroke:#52606D,stroke-width:1.5px
 ```
 
 </details>
@@ -221,45 +247,72 @@ graph LR
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Capture
-    Capture --> Inbox
-    Inbox --> Process
-    Process --> Actionable
-    Process --> Reference
-    
-    Actionable --> NextAction
-    Actionable --> Project
-    Actionable --> Calendar
-    Actionable --> WaitingFor
-    
-    Reference --> Archive
-    Archive --> Retrieve
-    Retrieve --> Process
-    
-    NextAction --> Do
-    Project --> Planning
-    Calendar --> Schedule
-    WaitingFor --> Follow_up
-    
-    Do --> Done
-    Planning --> NextAction
-    Schedule --> Do
-    Follow_up --> NextAction
-    
-    Done --> [*]
-    
-    state Process {
-        [*] --> Clarify
-        Clarify --> Organize
-        Organize --> [*]
-    }
-    
-    state Planning {
-        [*] --> Brainstorm
-        Brainstorm --> Structure
-        Structure --> Sequence
-        Sequence --> [*]
-    }
+  state "📥 Capture" as Capture
+  state "📨 Inbox" as Inbox
+  state "🔎 Actionable" as Actionable
+  state "📚 Reference" as Reference
+  state "✅ Next Action" as NextAction
+  state "📁 Project" as Project
+  state "📅 Calendar" as Calendar
+  state "⏳ Waiting For" as WaitingFor
+  state "🗃️ Archive" as Archive
+  state "🔍 Retrieve" as Retrieve
+  state "⚡ Do" as Do
+  state "🗓️ Schedule" as Schedule
+  state "📨 Follow-up" as FollowUp
+  state "🏁 Done" as Done
+
+  [*] --> Capture
+  Capture --> Inbox
+  Inbox --> Process
+  Process --> Actionable
+  Process --> Reference
+
+  Actionable --> NextAction
+  Actionable --> Project
+  Actionable --> Calendar
+  Actionable --> WaitingFor
+
+  Reference --> Archive
+  Archive --> Retrieve
+  Retrieve --> Process
+
+  NextAction --> Do
+  Project --> Planning
+  Calendar --> Schedule
+  WaitingFor --> FollowUp
+
+  Do --> Done
+  Planning --> NextAction
+  Schedule --> Do
+  FollowUp --> NextAction
+
+  Done --> [*]
+
+  state "🔎 Process" as Process {
+    [*] --> Clarify
+    state "🧭 Clarify" as Clarify
+    state "🗂️ Organize" as Organize
+    Clarify --> Organize
+    Organize --> [*]
+  }
+
+  state "🧠 Planning" as Planning {
+    [*] --> Brainstorm
+    state "💡 Brainstorm" as Brainstorm
+    state "🧱 Structure" as Structure
+    state "🔢 Sequence" as Sequence
+    Brainstorm --> Structure
+    Structure --> Sequence
+    Sequence --> [*]
+  }
+
+  classDef process fill:#DCEBFA,stroke:#355C7D,color:#1E293B
+  classDef data fill:#DDF2E1,stroke:#3F6B4F,color:#1E3324
+  classDef outcome fill:#FBE4F0,stroke:#8E496D,color:#3F2434
+  class Inbox,Actionable,NextAction,Project,Calendar,WaitingFor,Retrieve,Do,Schedule,FollowUp,Process,Planning,Clarify,Organize,Brainstorm,Structure,Sequence process
+  class Reference,Archive data
+  class Done outcome
 ```
 
 </details>
@@ -269,43 +322,43 @@ stateDiagram-v2
 
 ```mermaid
 mindmap
-  root)Information Organization(
-    (Capture)
-      Inbox Systems
-      Quick Notes
-      Voice Memos
-      Screenshots
-      Code Snippets
-    (Process)
-      GTD Methodology
-      Decision Making
-      Categorization
-      Prioritization
-      Context Assignment
-    (Organize)
-      File Systems
-      Tagging
-      Hierarchies
-      Cross-references
-      Version Control
-    (Share)
-      Documentation
-      Presentations
-      Collaboration
-      Knowledge Transfer
-      Training
-    (Tools)
-      VS Code
-      TheBrain
-      Confluence
-      GitHub
-      Mind Mapping
-    (Maintain)
-      Regular Reviews
-      System Updates
-      Archive Management
-      Performance Monitoring
-      Continuous Improvement
+  root((🧠 Information Organization))
+    📥 Capture
+      📨 Inbox Systems
+      📝 Quick Notes
+      🎙️ Voice Memos
+      📷 Screenshots
+      💻 Code Snippets
+    🔎 Process
+      📋 GTD Methodology
+      ⚖️ Decision Making
+      🗂️ Categorization
+      🔝 Prioritization
+      🏷️ Context Assignment
+    🗂️ Organize
+      📁 File Systems
+      🏷️ Tagging
+      🌳 Hierarchies
+      🔗 Cross-references
+      🔀 Version Control
+    🤝 Share
+      📄 Documentation
+      📊 Presentations
+      👥 Collaboration
+      🎓 Knowledge Transfer
+      🧑‍🏫 Training
+    🧰 Tools
+      🧰 VS Code
+      🧠 TheBrain
+      🌐 Confluence
+      🐙 GitHub
+      🗺️ Mind Mapping
+    🔄 Maintain
+      📅 Regular Reviews
+      🛠️ System Updates
+      🗃️ Archive Management
+      📈 Performance Monitoring
+      ♻️ Continuous Improvement
 ```
 
 </details>
@@ -314,49 +367,57 @@ mindmap
 <summary><strong>5. Deployment Architecture - Learning Session Setup</strong> (Click to expand)</summary>
 
 ```mermaid
-graph TB
-    subgraph "Presentation Environment"
-        A[Daitan University Platform]
-        B[Google Slides]
-        C[Video Conference Setup]
-        D[Screen Sharing Tools]
-    end
-    
-    subgraph "Content Delivery"
-        E[Live Presentation]
-        F[Interactive Demos]
-        G[Q&A Sessions]
-        H[Hands-on Exercises]
-    end
-    
-    subgraph "Supporting Materials"
-        I[PDF Handouts]
-        J[Tool Installation Guides]
-        K[Template Documents]
-        L[Resource Links]
-    end
-    
-    subgraph "Follow-up Resources"
-        M[Email Templates]
-        N[Documentation Links]
-        O[Tool Recommendations]
-        P[Community Forums]
-    end
-    
-    A --> E
-    B --> E
-    C --> F
-    D --> G
-    
-    E --> I
-    F --> J
-    G --> K
-    H --> L
-    
-    I --> M
-    J --> N
-    K --> O
-    L --> P
+flowchart TB
+  subgraph "🏛️ Presentation Environment"
+    A[🏫 Daitan University Platform]
+    B[📊 Google Slides]
+    C[🎥 Video Conference Setup]
+    D[🖥️ Screen Sharing Tools]
+  end
+
+  subgraph "🎤 Content Delivery"
+    E[🗣️ Live Presentation]
+    F[🧪 Interactive Demos]
+    G[❓ Q&A Sessions]
+    H[🛠️ Hands-on Exercises]
+  end
+
+  subgraph "📦 Supporting Materials"
+    I[(📄 PDF Handouts)]
+    J[📥 Tool Installation Guides]
+    K[(📝 Template Documents)]
+    L[🔗 Resource Links]
+  end
+
+  subgraph "📬 Follow-up Resources"
+    M[✉️ Email Templates]
+    N[📚 Documentation Links]
+    O[🧰 Tool Recommendations]
+    P[👥 Community Forums]
+  end
+
+  A -->|hosts| E
+  B -->|presents| E
+  C -->|enables| F
+  D -->|supports| G
+
+  E -->|provides| I
+  F -->|demonstrates| J
+  G -->|informs| K
+  H -->|references| L
+
+  I -->|followed by| M
+  J -->|links to| N
+  K -->|informs| O
+  L -->|connects to| P
+
+  classDef process fill:#DCEBFA,stroke:#355C7D,color:#1E293B
+  classDef data fill:#DDF2E1,stroke:#3F6B4F,color:#1E3324
+  classDef integration fill:#FBE4F0,stroke:#8E496D,color:#3F2434
+  class A,B,C,D,F,G,H,J,M,N,O,P process
+  class I,K data
+  class E,L integration
+  linkStyle default stroke:#52606D,stroke-width:1.5px
 ```
 
 </details>
@@ -366,26 +427,26 @@ graph TB
 
 ```mermaid
 gitGraph
-    commit id: "initial-concept"
-    commit id: "gtd-research"
-    commit id: "tool-evaluation"
-    branch content-development
-    commit id: "outline-creation"
-    commit id: "slide-structure"
-    commit id: "image-collection"
-    commit id: "demo-preparation"
-    checkout main
-    merge content-development
-    commit id: "daitan-template-integration"
-    branch presentation-materials
-    commit id: "handout-creation"
-    commit id: "email-templates"
-    commit id: "authorization-forms"
-    checkout main
-    merge presentation-materials
-    commit id: "final-review"
-    commit id: "session-delivery"
-    commit id: "feedback-integration"
+  commit id: "💡 Initial concept"
+  commit id: "📋 GTD research"
+  commit id: "🧰 Tool evaluation"
+  branch content-development
+  commit id: "📝 Outline creation"
+  commit id: "🧱 Slide structure"
+  commit id: "🖼️ Image collection"
+  commit id: "🧪 Demo preparation"
+  checkout main
+  merge content-development
+  commit id: "🏛️ Daitan template integration"
+  branch presentation-materials
+  commit id: "📄 Handout creation"
+  commit id: "✉️ Email templates"
+  commit id: "📝 Authorization forms"
+  checkout main
+  merge presentation-materials
+  commit id: "🔎 Final review"
+  commit id: "🎤 Session delivery"
+  commit id: "🔄 Feedback integration"
 ```
 
 </details>
